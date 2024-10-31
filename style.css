@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      background-color: #fff #7a7557;
+      
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:20px ;
+    box-shadow: 0 5px 15px;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: larger;   
+    position: relative;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: #555;
+    transition: 0.3s ease;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: #7a7557;
+    position: absolute;
+    bottom:-3px ;
+    left: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-height: 100%;
+
+    
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #7a7557;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5;
+}
+.btn:hover{
+    background:rgba(107, 116, 88, 0.267);
+}
+.header{
+    background: radial-gradient(#fff,#7a7557);
+    
+    top: 0;
+    left: 0;
+    
+}
+.header .row{
+    margin-top: 70px;
+}
+footer{
+    padding-left: 10%;
+    margin-top: 10%;
+}
+   
+
+ .row-header{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0;
+
+}
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+#product {
+    text-align: center;
+    margin-top: 150px;
+    font-size: xx-large;  
+
+}
+#product .pro{
+    width: 24%;
+    min-width: 250px;
+    padding: 9px 12px;
+    border: 3px  #555;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.3 ease;
+
+}
+#product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product .pro .description{
+    text-align: start;
+    padding: 10px 0;
+    
+}
+#product .pro .description span{
+    font-size: 20px;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+    padding-top: 40px;
+}
+#about-head{
+    display: flex;
+    align-items: center;
+
+}
+#about-head div{
+    padding-left: 40px;   
+}
+#about-head div h2{
+    font-size: xx-large;
+}
+#about-head div p{
+    font-size: larger;
+    font-style: oblique;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+
+}
+footer col{
+    display: flex;
+    flex-direction: column;
+    
+}
+footer .col-install h4{
+    font-size: xx-large;
+    
+}
+footer .col-install p{
+    font-size: larger;
+}
+#contact-details .details{
+    
+    width: 40%;
+    padding-top: 15%;    
+     
+}
+#contact-details .details span,
+#form-details form span{
+    font-size: xx-large;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px; 
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h3{
+    font-size: 26px; 
+    padding-bottom: 15px;
+}  
+#contact-details .details li{
+    font-size: larger;
+} 
+#form-details form{
+width: 65%;
+display: flex;
+flex-direction: column;
+}
+#form-details form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+}
+#form-details form span{
+    padding-top: 50px;
+}
+#form-details form button:hover{
+    background-color: #7a7557;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px #555;
+
+}
+
+
+#login-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(#fff,#7a7557);
+}
+
+.login-container {
+  width: 300px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+    
+
+
+
+
+
+
